@@ -9,11 +9,8 @@ public class CalcEngine {
         }
     }
 
-    public static double evaluate(String expr) {
-        // Remove spaces
+    public static double evaluate(String expr) 
         expr = expr.replaceAll("\\s+", "");
-
-        // Basic operators: + - * /
         double result = 0.0;
         char lastOp = '+';
         StringBuilder number = new StringBuilder();
@@ -50,3 +47,4 @@ public class CalcEngine {
         return result;
     }
 }
+
